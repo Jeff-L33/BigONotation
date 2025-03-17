@@ -168,7 +168,8 @@ int main() {
     
     //std::cout << "O(2^n): Fibonacci(5) time: " << timeFunction(fibonacci, 5) << " ms" << std::endl;
     
-    // std::cout << "O(n!): Generating Permutations (first 6 elements) time: " << timeFunction(generatePermutations, v, 0, 5) << " ms" << std::endl;
-    
+	std::vector<std::vector<int>> results;
+    std::cout << "O(n!): Generating Permutations (first 6 elements) time: " << timeFunction(generatePermutations, v, 0, 5, results) << " ms" << std::endl;
+	std::cout << "Siz of results: " << results.size() << std::endl;
     return 0;
 }
